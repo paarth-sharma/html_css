@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Webform</title>
+</head>
+<body>
+
+    <h1>HTML FORMS</h1>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="JohnDoe" required>
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="john@doe.com" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="John123$" required>
+
+        <p>Select you age:</p>
+
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-2">26-50</label>
+
+        <br><br>
+
+        <label for="question">Security question</label>
+        <select name="question" id="question">
+            <option value="q1">What color are your favourite pair of socks</option>
+            <option value="q2">If you could be a vegetable, what would you be?</option>
+            <option value="q3">What is your best security question ever?</option>
+        </select>
+
+        <br><br>
+
+        <label for="answer">Security question answer</label>
+        <input type="text" id="answer" name="answer">
+
+        <br><br>
+
+        <label for="bio">Your Bio here</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+
+        <br><br>
+        <input type="submit" value="submit the form">
+
+    </form>
+    
+</body>
+</html>
